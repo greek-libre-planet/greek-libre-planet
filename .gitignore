@@ -1,0 +1,5 @@
+*.tmplc
+cache
+*.pluginc
+*.pyc
+themes/
