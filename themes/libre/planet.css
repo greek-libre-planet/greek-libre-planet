@@ -120,6 +120,8 @@ img a {
 .post img {
     max-width:600px;
     float:left;
+    padding-bottom:10px;
+    padding-right:10px;
 }
 
 pre code {
