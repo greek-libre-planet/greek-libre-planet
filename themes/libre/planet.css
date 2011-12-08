@@ -1,7 +1,7 @@
 body {
-	font-family:'Ubuntu', 'Droid Sans', 'dejavu sans';
-	margin: 0px;
-	background-color:#ddd;
+    font-family:'Ubuntu', 'Droid Sans', 'dejavu sans';
+    margin: 0px;
+    background-color:#ddd;
     font-size:14px;
 }
 
@@ -115,8 +115,9 @@ img a {
 }
 
 
-.content img {
+.post img {
     max-width:600px;
+    float:left;
 }
 
 pre code {
