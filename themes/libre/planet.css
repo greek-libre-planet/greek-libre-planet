@@ -34,7 +34,7 @@ a:hover {
 
 .postdate {
     clear:both;
-    float:left;
+    float:right;
     margin-top:30px;
 	background: #0090B7;
     border-top: #33493c 5px solid;
