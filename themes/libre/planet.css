@@ -1,0 +1,82 @@
+body {
+	font-family:'Ubuntu', 'Droid Sans', 'dejavu sans';
+	margin: 0px;
+	background-color:#ddd;
+    font-size:14px;
+}
+
+.disclaimer {
+	font-size:12px;
+	border: 1px solid grey;
+	margin:20px;
+	padding:10px;
+	color: #1a3d56;
+}
+
+.header {
+    float:left;
+    color:#0090B7;
+    font-size:2em;
+    font-weight:bold;
+    margin:30px;
+}
+
+.date {
+    clear:both;
+    float:left;
+	background: #0090B7;
+	margin-left: 30px;
+    border-top: #33493c 5px solid;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 3px #292929;  
+    -moz-box-shadow: 1px 1px 3px #292929;  
+    box-shadow: 1px 1px 3px #292929;
+    color:white;
+    padding: .3em .4em .3em .4em;
+}
+
+.container {
+    clear:both;
+    width:960px;
+    margin-top:30px;
+    margin-left:30px;
+    float:left;
+}
+.post {
+    float:left;
+    width:700px;
+    border-top: #33493c 5px solid; padding-bottom: 20px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 3px #292929;  
+    -moz-box-shadow: 1px 1px 3px #292929;  
+    box-shadow: 1px 1px 3px #292929;
+    padding:10px;
+}
+
+.sidebar {
+    float:right;
+    width:200px;
+}
+
+img {
+    border:none;
+} 
+
+img a {
+    border:none;
+} 
+
+
+.content img {
+    max-width:500px;
+}
+
+pre {
+	background-color: #f7f7f7;
+	font: 1em 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+	overflow: auto;
+        padding: 1em;
+	max-width: 600px;
+}

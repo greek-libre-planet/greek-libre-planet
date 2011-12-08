@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<!--<title><TMPL_VAR name></title>-->
+<title>test</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" href="favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="planet.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=greek,latin' rel='stylesheet' type='text/css'>
+<!--
+<TMPL_IF feedtype>
+<link rel="alternate" href="<TMPL_VAR feed ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml">
+</TMPL_IF>
+-->
+</head>
+
+<body>
+<div class="header">
+    πλανήτης ελληνικής κοινότητας ΕΛ/ΛΑΚ
+</div>
+
+<div class="date">
+    December 07, 2011
+</div>
+
+<div class="container">
+    <div class="post">
+        This weekend the Mozcamp 2011 took place at Berlin. This was actually the first Mozilla event I participated and I really had a great time, meeting a lot of mozillians, exchanging ideas, talking about the future of the web we are to trying to build.<br /><br />
+        
+        Some of the highlights of this Mozcamp:<br /><br />
+    </div>
+
+    <div class="sidebar">
+        test2
+    </div>
+</div>
+
+<!--
+<table class="header" cellpadding="0" cellspacing="0">
+<tr><td align="left" valign="bottom"><img src="images/planet_banner.png" width="250" height="100" alt="Planet Hellug">
+</td>
+<td align="left" width="250" valign="middle">
+<h4 style="color:#cccccc;">Τελευταία ενημέρωση:<br>
+Σήμερα, <TMPL_VAR date></h4>
+</td></tr></table>
+<TMPL_VAR admin>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr><td align="left" valign="top">
+
+<TMPL_LOOP Items>
+<TMPL_IF new_date>
+<TMPL_UNLESS __FIRST__>
+### End <div class="channelgroup">
+</div>
+### End <div class="daygroup">
+</div>
+</TMPL_UNLESS>
+<br /><div class="daygroup">
+<h2><TMPL_VAR new_date></h2>
+</TMPL_IF>
+
+<TMPL_IF new_channel>
+<TMPL_UNLESS new_date>
+### End <div class="channelgroup">
+</div>
+</TMPL_UNLESS>
+<div class="channelgroup">
+
+<h3><a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" target="_new"><TMPL_VAR channel_name></a></h3>
+<TMPL_IF channel_face>
+<img class="face" src="images/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt="">
+</TMPL_IF>
+</TMPL_IF>
+
+
+<div class="entrygroup" id="<TMPL_VAR id>"<TMPL_IF channel_language> lang="<TMPL_VAR channel_language>"</TMPL_IF>>
+<TMPL_IF title>
+<h4<TMPL_IF title_language> lang="<TMPL_VAR title_language>"</TMPL_IF>><a href="<TMPL_VAR link ESCAPE="HTML">" target="_new"><TMPL_VAR title></a></h4>
+</TMPL_IF>
+<div class="entry">
+<div class="content"<TMPL_IF content_language> lang="<TMPL_VAR content_language>"</TMPL_IF>>
+<TMPL_VAR content>
+</div>
+
+<p class="date">
+<a href="<TMPL_VAR link ESCAPE="HTML">" target="_new"><TMPL_IF author>από <TMPL_VAR author ESCAPE="HTML"> στις </TMPL_IF><TMPL_VAR date><TMPL_IF category> στην κατηγορία <TMPL_VAR category></TMPL_IF></a>
+</p>
+</div>
+</div>
+
+<TMPL_IF __LAST__>
+### End <div class="channelgroup">
+</div>
+### End <div class="daygroup">
+</div>
+</TMPL_IF>
+</TMPL_LOOP>
+
+<br />
+
+<div class="disclaimer">
+Οι καταχωρήσεις συλλέγονται αυτόματα χωρίς ανθρώπινη παρέμβαση και αποτελούν πνευματική ιδιοκτησία των συγγραφέων τους. Τα παραπάνω δημοσιεύματα δεν αντικατοπτρίζουν απαραίτητα τις απόψεις της Ένωσης Χρηστών και Φίλων Linux Ελλάδας
+</div>
+
+
+
+</td><td align="left" width="250" class="sidebar" valign="top">
+
+<h4>Το <span style="color:#000000;">planet.hellug.gr</span> αποτελεί ένα τόπο συνάντησης των μελών της ελληνικής κοινότητας ελεύθερου λογισμικού.<br /><br />Xρησιμοποιεί το λογισμικό
+<a href="http://www.planetplanet.org/" style="color:#000000;text-decoration:none;">planet</a>,
+κατάλληλα τροποποιημένο απο τη διαχειριστική του ομαδα, και συγκεντρώνει στοιχεία από τις παρακάτω πηγές: </h4>
+<ul>
+<TMPL_LOOP Channels>
+<li>
+<a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="images/feed-icon-10x10.png" alt="(feed)"></a> <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>
+</li>
+</TMPL_LOOP>
+</ul>
+
+<div style="border-bottom:10px dotted black;padding-bottom:10px;height:1px;width:230px;" align="center">&nbsp;</div>
+
+
+<h4><img src="images/feeds.png" alt="feeds" title="feeds" />&nbsp;&nbsp; Feeds:</h4>
+<ul>
+<li>&nbsp;&nbsp;<a href="atom.xml">Atom 1.0</a></li>
+<li>&nbsp;&nbsp;<a href="rss20.xml">RSS 2.0</a></li>
+<li>&nbsp;&nbsp;<a href="rss10.xml">RSS 1.0</a></li>
+<li>&nbsp;&nbsp;<a href="foafroll.xml">FOAF</a></li>
+<li>&nbsp;&nbsp;<a href="opml.xml">OPML</a></li>
+</ul>
+
+<div style="border-bottom:10px dotted black;padding-bottom:10px;height:1px;width:230px;" align="center">&nbsp;</div>
+
+<br />
+<h4>Aν επιθυμείτε να συμπεριληφθεί και το δικό σας blog, συμπληρώστε τη φόρμα <a href="form.php" style="color:#000000;text-decoration:none;">εγγραφής</a>.</h4>
+<h4>Θέλετε το blog σας να εμφανίζεται με το δικό του <a href="http://en.wikipedia.org/wiki/Hackergotchi" style="color:#000000;text-decoration:none;" target="new">hackergotchi</a>; Ακολουθήστε τις <a href="hackergotchi.html" style="color:#000000;text-decoration:none;">οδηγίες</a>.</h4>
+
+
+</td></tr></table>
+-->
+</body>
+</html>
