@@ -40,7 +40,7 @@ a:hover {
 
 .postdate {
     clear:both;
-    float:right;
+    float:left;
     margin-top:30px;
 	background: #0090B7;
     border-top: #33493c 5px solid;
@@ -65,7 +65,7 @@ a:hover {
     box-shadow: 1px 1px 3px #292929;
     padding:10px;
     padding-top:0px;
-    margin-top:60px;
+    margin-top:90px;
 }
 
 .sidebar {
