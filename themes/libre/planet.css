@@ -87,6 +87,11 @@ a:hover {
     font-weight:bold;
 }
 
+.posttitle {
+    font-size:1em;
+    font-weight:normal;
+}
+
 .sources {
     color:#0090B7;
     font-weight:bold;

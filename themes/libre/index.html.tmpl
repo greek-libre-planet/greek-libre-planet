@@ -32,7 +32,7 @@
         </TMPL_IF>
         <div class="postdetails">
             <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" target="_new"><TMPL_VAR channel_name></a><br />
-            <TMPL_IF title><a href="<TMPL_VAR link ESCAPE="HTML">" target="_blank"><TMPL_VAR title></a></TMPL_IF>
+            <TMPL_IF title><span class="posttitle"><a href="<TMPL_VAR link ESCAPE="HTML">" target="_blank"><TMPL_VAR title></a></span></TMPL_IF>
         </div>
         <TMPL_VAR content>
     </div>
