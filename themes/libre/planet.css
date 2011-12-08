@@ -25,7 +25,7 @@ a:hover {
     margin-bottom:0px;
 }
 
-.date {
+.postdate {
     clear:both;
     float:left;
 	background: #0090B7;
@@ -71,7 +71,7 @@ a:hover {
     font-size:0.9em;
 }
 
-.avatar {
+.postavatar {
     position:relative;
     left:-45px;
     top:-45px;
@@ -79,15 +79,7 @@ a:hover {
     display:inline-block;
 }
 
-.author {
-    padding:20px;
-    float:right;
-    color:#0090B7;
-    font-size:1.2em;
-    font-weight:bold;
-}
-
-.posttitle {
+.postdetails {
     padding:20px;
     float:right;
     color:#0090B7;
@@ -105,8 +97,6 @@ a:hover {
     clear:both;
     padding:10px;
     width:960px;
-    position:absolute;
-    bottom:0px;
     margin-left:30px;
     border-top:1px dotted grey;
     font-size:0.8em;
