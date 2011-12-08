@@ -32,11 +32,11 @@
         <TMPL_IF channel_face>
             <div class="postavatar"><img src="images/avatars/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt=""></div>
         <TMPL_ELSE>
-            <div class="postavatar"><img src="images/avatars/nobody.png" alt=""/></div><br/>
+            <div class="postavatar"><img src="images/avatars/nobody.png" alt=""/></div>
         </TMPL_IF>
         <div class="postdetails">
-            <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" target="_new"><TMPL_VAR channel_name></a><br />
-            <TMPL_IF title><div class="posttitle"><a href="<TMPL_VAR link ESCAPE="HTML">" target="_blank"><TMPL_VAR title></a></div></TMPL_IF>
+            <TMPL_IF title><a href="<TMPL_VAR link ESCAPE="HTML">" target="_blank"><TMPL_VAR title></a><br /></TMPL_IF>
+            <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" target="_new"><TMPL_VAR channel_name></a>            
         </div>
         <TMPL_VAR content>
     </div>

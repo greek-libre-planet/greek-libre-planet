@@ -71,7 +71,7 @@ a:hover {
 .sidebar {
     float:right;
     width:200px;
-    margin-top:90px;
+    margin-top:120px;
     text-align:left;
     font-size:0.9em;
 }
@@ -87,15 +87,8 @@ a:hover {
 .postdetails {
     padding:20px;
     float:right;
-    color:#0090B7;
-    font-size:1.2em;
     font-weight:bold;
-}
-
-.posttitle {
-    font-size:1em;
-    font-weight:normal;
-    display:inline;
+    text-align:right;
 }
 
 .sources {
