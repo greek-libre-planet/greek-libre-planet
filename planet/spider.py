@@ -207,9 +207,9 @@ def writeCache(feed_uri, feed_info, data):
         mtime = None
         if not entry.has_key('updated_parsed') or not entry['updated_parsed']:
             entry['updated_parsed'] = entry.get('published_parsed',None)
-        if entry.has_key('updated_parsed'):
+        if entry.has_key('published_parsed'):
             try:
-                mtime = calendar.timegm(entry.updated_parsed)
+                mtime = calendar.timegm(entry.published_parsed)
             except:
                 pass
         if not mtime:
@@ -221,7 +221,7 @@ def writeCache(feed_uri, feed_info, data):
                         mtime = calendar.timegm(data.feed.updated_parsed)
                     except:
                         pass
-        if not mtime: mtime = time.time()
+        #if not mtime: mtime = time.time()
         entry['updated_parsed'] = time.gmtime(mtime)
 
         # apply any filters
