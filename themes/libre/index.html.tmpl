@@ -21,14 +21,14 @@
 <TMPL_LOOP Items>
 <TMPL_IF new_date>
     <div class="postdate">
-        <h2><TMPL_VAR new_date></h2>
+        <TMPL_VAR new_date>
     </div>
 </TMPL_IF>
 
 <TMPL_IF new_channel>
     <div class="post">
         <TMPL_IF channel_face>
-            <div class="postavatar"><img class="face" src="images/avatars/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt="">
+            <div class="postavatar"><img class="face" src="images/avatars/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt=""></div>
         </TMPL_IF>
         <div class="postdetails">
             <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" target="_new"><TMPL_VAR channel_name></a><br />
