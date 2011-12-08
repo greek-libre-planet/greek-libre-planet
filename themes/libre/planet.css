@@ -21,14 +21,14 @@ a:hover {
     color:#0090B7;
     font-size:2em;
     font-weight:bold;
-    margin:30px;
+    margin:40px;
     margin-bottom:0px;
 }
 
 .container {
     clear:both;
     width:960px;
-    margin-left:30px;
+    margin-left:40px;
     float:left;
 }
 
