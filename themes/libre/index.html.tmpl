@@ -2,38 +2,43 @@
 <html>
 
 <head>
-<!--<title><TMPL_VAR name></title>-->
-<title>test</title>
+<title><TMPL_VAR name></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="icon" href="favicon.png" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 <link rel="stylesheet" href="planet.css" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=greek,latin' rel='stylesheet' type='text/css'>
-<!--
-<TMPL_IF feedtype>
-<link rel="alternate" href="<TMPL_VAR feed ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" type="application/<TMPL_VAR feedtype>+xml">
-</TMPL_IF>
--->
+<link rel="alternate" href="atom.xml title="<TMPL_VAR name>" type="application/atom+xml">
 </head>
 
 <body>
 <div class="header">
-    πλανήτης ελληνικής κοινότητας ΕΛ/ΛΑΚ
-</div>
-
-<div class="date">
-    December 07, 2011
+    <TMPL_VAR name>
 </div>
 
 <div class="container">
-    <div class="post">
-        <div class="avatar"><img src="../../../public_html/images/avatars/nrous.png" alt=""></div>
-        <div class="author">test</div>
-        This weekend the Mozcamp 2011 took place at Berlin. This was actually the first Mozilla event I participated and I really had a great time, meeting a lot of mozillians, exchanging ideas, talking about the future of the web we are to trying to build.<br /><br />
-        
-        Some of the highlights of this Mozcamp:<br /><br />
-        
+
+<TMPL_LOOP Items>
+<TMPL_IF new_date>
+    <div class="date">
+        <h2><TMPL_VAR new_date></h2>
     </div>
+</TMPL_IF>
+
+<TMPL_IF new_channel>
+    <div class="post">
+        <TMPL_IF channel_face>
+            <div class="avatar"><img class="face" src="images/avatars/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt="">
+        </TMPL_IF>
+        <div class="author"><a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" target="_new"><TMPL_VAR channel_name></a></div>
+        <TMPL_IF title>
+            <div class="posttitle"><TMPL_IF title_language> lang="<TMPL_VAR title_language>"</TMPL_IF>><a href="<TMPL_VAR link ESCAPE="HTML">" target="_blank"><TMPL_VAR title></a></div>
+        </TMPL_IF>
+
+        <TMPL_VAR content>
+    </div>
+</TMPL_IF>
+</TMPL_LOOP>
 
     <div class="sidebar">
         Ο πλανήτης αποτελεί ένα τόπο συνάντησης των μελών της ελληνικής κοινότητας ελ/λακ.<br /> Για να προσθέσεις το blog σου ή για γενικότερη επικοινωνία απλώς χρησιμοποιήσε τη <a href="">σχετική φόρμα</a>.<br /><br />
@@ -43,9 +48,12 @@
         <a href="atom.xml" title="Suscribe to RSS feed"><img src="../../../public_html/images/rss.png" alt="RSS 2.0 Feed"/></a><br /><br /><br />
         
         <span class="sources">Πηγές:</span><br /><br />
-        <img src="../../../public_html/images/feed-icon-10x10.png" alt="" /> Νίκος Ρούσσος<br />
+        <TMPL_LOOP Channels>
+            <a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="images/feed-icon-10x10.png" alt="(feed)"></a> <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>
+        </TMPL_LOOP>
     </div>
 </div>
+
 
 <div class="footer">
     Τα άρθρα του πλανήτη συλλέγονται αυτόματα χωρίς ανθρώπινη παρέμβαση και αποτελούν πνευματική ιδιοκτησία των συγγραφέων τους και αντικατοπτρίζουν τις απόψεις των συγγραφέων τους.

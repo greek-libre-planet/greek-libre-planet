@@ -87,6 +87,14 @@ a:hover {
     font-weight:bold;
 }
 
+.posttitle {
+    padding:20px;
+    float:right;
+    color:#0090B7;
+    font-size:1.2em;
+    font-weight:bold;
+}
+
 .sources {
     color:#0090B7;
     font-weight:bold;
