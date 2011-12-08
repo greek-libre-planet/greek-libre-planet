@@ -30,9 +30,9 @@
 <TMPL_IF new_channel>
     <div class="post">
         <TMPL_IF channel_face>
-            <div class="postavatar"><img class="face" src="images/avatars/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt=""></div>
+            <div class="postavatar"><img src="images/avatars/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt=""></div>
         <TMPL_ELSE>
-            <img class="postavatar" src="images/avatars/nobody.png" alt=""/><br/>
+            <div class="postavatar"><img src="images/avatars/nobody.png" alt=""/></div><br/>
         </TMPL_IF>
         <div class="postdetails">
             <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" target="_new"><TMPL_VAR channel_name></a><br />
@@ -48,9 +48,9 @@
     <div class="sidebar">
         Ο πλανήτης αποτελεί ένα τόπο συνάντησης των μελών της ελληνικής κοινότητας ελ/λακ.<br /> Για να προσθέσεις το blog σου ή για γενικότερη επικοινωνία απλώς χρησιμοποιήσε τη <a href="">σχετική φόρμα</a>.<br /><br />
 
-        Ο πλανήτης χρησιμοποιεί το ελεύθερο λογισμικό <a href="intertwingly.net/code/venus/" target="_blank">venus</a>. Για να δεις τις τροποποιήσεις στον κώδικα που έχουν γίνει μπορείς να επισκεφτείς το <a href="https://github.com/comzeradd/greek-libre-planet" target="_blank">σχετικό repository</a>, όπου μπορείς να ανοίξεις κάποιο issue με σχόλια και παρατηρήσεις.<br /><br />
+        Ο πλανήτης χρησιμοποιεί το ελεύθερο λογισμικό <a href="http://intertwingly.net/code/venus/" target="_blank">venus</a>. Για να δεις τις τροποποιήσεις στον κώδικα που έχουν γίνει μπορείς να επισκεφτείς το <a href="https://github.com/comzeradd/greek-libre-planet" target="_blank">σχετικό repository</a>, όπου μπορείς να ανοίξεις κάποιο issue με σχόλια και παρατηρήσεις.<br /><br />
         
-        <a href="atom.xml" title="Suscribe to Atom feed"><img src="../../../public_html/images/rss.png" alt="Atom Feed"/></a><br /><br /><br />
+        <a href="atom.xml" title="Suscribe to Atom feed"><img src="images/rss.png" alt="Atom Feed"/></a><br /><br /><br />
         
         <span class="sources">Πηγές:</span><br /><br />
         <TMPL_LOOP Channels>

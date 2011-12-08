@@ -71,7 +71,7 @@ a:hover {
 .sidebar {
     float:right;
     width:200px;
-    margin-top:30px;
+    margin-top:90px;
     text-align:left;
     font-size:0.9em;
 }
@@ -99,7 +99,7 @@ a:hover {
 }
 
 .sources {
-    color:#0090B7;
+    color:#000;
     font-weight:bold;
     font-size:1.2em;
 }
@@ -126,10 +126,10 @@ img a {
     max-width:600px;
 }
 
-pre {
+pre code {
 	background-color: #f7f7f7;
 	font: 1em 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
 	overflow: auto;
-        padding: 1em;
+    padding: 1em;
 	max-width: 600px;
 }
