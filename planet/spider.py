@@ -205,13 +205,27 @@ def writeCache(feed_uri, feed_info, data):
 
         # get updated-date either from the entry or the cache (default to now)
         mtime = None
+        
+        # This might sound stupid but when most people update one of their older
+        # posts, they wouldn't want the aggregator to show this post again
+        # Hence it is more logical to first look for the published date and then
+        # the updated date (should the first, for whatever reason, not exist)
+        
         if not entry.has_key('updated_parsed') or not entry['updated_parsed']:
             entry['updated_parsed'] = entry.get('published_parsed',None)
+            
         if entry.has_key('published_parsed'):
             try:
                 mtime = calendar.timegm(entry.published_parsed)
             except:
                 pass
+                
+        if not mtime and entry.has_key('updated_parsed'):
+            try:
+                mtime = calendar.timegm(entry.updated_parsed)
+            except:
+                pass
+                
         if not mtime:
             try:
                 mtime = os.stat(cache_file).st_mtime
@@ -221,8 +235,8 @@ def writeCache(feed_uri, feed_info, data):
                         mtime = calendar.timegm(data.feed.updated_parsed)
                     except:
                         pass
-        #if not mtime: mtime = time.time()
-        entry['updated_parsed'] = time.gmtime(mtime)
+        if not mtime: mtime = time.time()
+        #entry['updated_parsed'] = time.gmtime(mtime)
 
         # apply any filters
         xdoc = reconstitute.reconstitute(data, entry)
