@@ -102,12 +102,18 @@ a:hover {
 .footer {
     clear:both;
     padding:10px;
-    width:960px;
+    width:700px;
     margin-left:30px;
-    margin-top:20px;
-    border-top:1px dotted grey;
+    margin-bottom:20px;
+    padding-top:20px;
     font-size:0.8em;
 }
+
+.footerspan {
+    padding-top:10px;
+    border-top:1px dotted grey;
+}
+
 
 img {
     border:none;
