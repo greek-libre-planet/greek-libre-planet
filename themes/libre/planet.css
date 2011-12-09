@@ -105,11 +105,11 @@ a:hover {
     width:700px;
     margin-left:30px;
     margin-bottom:20px;
-    padding-top:20px;
+    padding-top:40px;
     font-size:0.8em;
 }
 
-.footerspan {
+.footerdiv {
     padding-top:10px;
     border-top:1px dotted grey;
 }
