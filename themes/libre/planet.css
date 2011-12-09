@@ -132,54 +132,38 @@ img a {
 }
 
 pre code {
-	background-color: #f7f7f7;
-	font: 1em 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
-	overflow: auto;
+    background-color: #f7f7f7;
+    font: 1em 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+    overflow: auto;
     padding: 1em;
-	max-width: 600px;
+    max-width: 600px;
 }
 
 #back-top {
     position: fixed;
     bottom: 30px;
-    margin-left: -150px;
+    right: 20px;
 }
 
 #back-top a {
-    width: 108px;
+    width: 58px;
+    height: 58px;
     display: block;
     text-align: center;
-    font: 11px/100% Arial, Helvetica, sans-serif;
+    vertical-align:middle;
     text-transform: uppercase;
     text-decoration: none;
-    color: #bbb;
-    /* background color transition */
+    color: #ddd;
+    background-color:#999;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     transition: 1s;
-}
-
-#back-top a:hover {
-    color: #000;
-}
-
-/* arrow icon (span tag) */
-#back-top span {
-    width: 108px;
-    height: 108px;
-    display: block;
-    margin-bottom: 7px;
-    background: #ddd url(up-arrow.png) no-repeat center center;
-    /* rounded corners */
+    font-size:3.8em;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    /* background color transition */
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    transition: 1s;
 }
 
-#back-top a:hover span {
-    background-color: #777;
+#back-top a:hover {
+    background-color: #000;
 }
