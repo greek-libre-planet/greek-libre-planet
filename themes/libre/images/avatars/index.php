@@ -35,7 +35,7 @@ sort($folder);
 
 <?php
 for ($count=0; $count < $photos; $count++) {
-    echo "<img src=".$folder[$count].">";
+    echo "<div style=\"display:inline;padding:4px;\"><img src=".$folder[$count]."></div>";
 }
 ?>
 
