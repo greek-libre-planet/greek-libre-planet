@@ -21,5 +21,17 @@ $(document).ready(function(){
 			return false;
 		});
 	});
+	
+	$('a#addform').click(function() {
+	    $('#editformbox').hide();
+	    $('#addformbox').toggle();
+	return false;
+    });
+	
+	$('a#editform').click(function() {
+	    $('#editformbox').toggle();
+	    $('#addformbox').hide();
+	return false;
+    });
 
 });

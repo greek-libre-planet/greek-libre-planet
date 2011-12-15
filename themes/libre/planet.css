@@ -167,3 +167,26 @@ pre, code {
 #back-top a:hover {
     background-color: #000;
 }
+
+.contactlinks {
+    padding:20px;
+}
+
+.contactform {
+    clear:left;
+    float:left;
+    width:770px;
+    border-top: #33493c 5px solid; padding-bottom: 20px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 3px #292929;  
+    -moz-box-shadow: 1px 1px 3px #292929;  
+    box-shadow: 1px 1px 3px #292929;
+    padding:10px;
+    padding-top:0px;
+}
+
+.return {
+    clear:both;
+    padding-left:40px;
+}
