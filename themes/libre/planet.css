@@ -131,6 +131,10 @@ img a {
     padding-right:10px;
 }
 
+.bigimg {
+    float:none;
+}
+
 pre, code {
     background-color: #eee;
     font: 0.9em 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', Monospace;

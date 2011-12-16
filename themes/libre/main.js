@@ -6,6 +6,7 @@ $(document).ready(function(){
 	//image floating automation
 	if ($("img").width() > 400) {
 	    $("img").css("float", "none");
+	    $("img").addClass("bigimg");
 	}
 	
 	// fade in #back-top
