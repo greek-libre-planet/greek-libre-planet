@@ -3,6 +3,11 @@ $(document).ready(function(){
 	// hide #back-top first
 	$("#back-top").hide();
 	
+	/image floating automation
+	if ($('img').width() > 400) {
+	    $('img').css("float", "none");
+	}
+	
 	// fade in #back-top
 	$(function () {
 		$(window).scroll(function () {
