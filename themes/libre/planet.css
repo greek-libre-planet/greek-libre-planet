@@ -23,7 +23,7 @@ a:hover {
     font-weight:bold;
     margin:40px;
     margin-bottom:0px;
-    text-shadow: 0.02em 0.02em 0.2em black;
+    text-shadow: 0.07em 0.07em 0.05em #33493c;
 }
 
 .container {
