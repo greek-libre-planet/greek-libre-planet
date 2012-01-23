@@ -204,9 +204,8 @@ form#addblog {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     */
-    border:1px solid #009BE3;
     padding: 10px;
-    width: 400px;
+    width: 450px;
 }
 
 form#addblog ol li {
