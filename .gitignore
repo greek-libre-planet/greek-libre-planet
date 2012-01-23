@@ -3,3 +3,6 @@ cache
 *.pluginc
 *.pyc
 libre/config_*
+themes/libre/addblog.php
+themes/libre/editblog.php
+
