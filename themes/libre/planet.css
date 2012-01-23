@@ -195,3 +195,85 @@ pre, code {
     clear:both;
     padding-left:40px;
 }
+
+
+form#addblog {
+    background-color:#eee;
+    /*
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    */
+    border:1px solid #009BE3;
+    padding: 10px;
+    width: 400px;
+}
+
+form#addblog ol li {
+    background-color: none;
+    line-height: 30px;
+    list-style: none;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+}
+
+form#addblog ol ol li {
+    background: none;
+    border: none;
+    float: left;
+}
+
+form#addblog label {
+    float: left;
+    font-size: 13px;
+    width: 310px;
+}
+
+form#addblog fieldset fieldset label {
+    background:none no-repeat left 50%;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+    width: auto;
+}
+
+form#addblog fieldset fieldset label:hover {
+    cursor: pointer;
+}
+
+form#addblog input,
+form#addblog textarea { 
+    background: #ffffff;
+    border: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-style:italic;
+    outline: none;
+    padding: 5px;
+    width: 240px;
+    font-size:13px;
+}
+
+
+form#addblog input:not([type=submit]):focus,
+form#addblog textarea:focus {
+    background: #ccc;
+}
+
+form#addblog button {
+    background: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #000;
+    display: block;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: 7px 15px;
+    text-shadow: 0 1px 1px #000000;
+}
+
+form#addblog button:hover {
+    background: #fff;
+    cursor: pointer;
+}
