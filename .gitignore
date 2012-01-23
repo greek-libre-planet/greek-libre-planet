@@ -5,4 +5,5 @@ cache
 libre/config_*
 themes/libre/addblog.php
 themes/libre/editblog.php
+themes/libre/recaptchalib.php
 
