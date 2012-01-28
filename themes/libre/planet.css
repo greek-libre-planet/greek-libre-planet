@@ -196,6 +196,12 @@ pre, code {
     padding-left:40px;
 }
 
+.return {
+    clear:both;
+    padding-left:40px;
+    width:560px;
+}
+
 
 form#addblog {
     background-color:#eee;
