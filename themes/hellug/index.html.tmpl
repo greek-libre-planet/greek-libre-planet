@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<title><TMPL_VAR name></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" href="favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="planet.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=greek,latin' rel='stylesheet' type='text/css'>
+<link rel="alternate" href="atom.xml" title="<TMPL_VAR name>" type="application/atom+xml">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+<div class="header">
+    <TMPL_VAR name>
+</div>
+
+<div class="container">
+
+<div class="postcontainer">
+
+<TMPL_LOOP Items>
+<TMPL_IF new_date>
+    <div class="postdate">
+        <TMPL_VAR new_date>
+    </div>
+</TMPL_IF>
+
+<TMPL_IF new_channel>
+    <div class="post">
+        <TMPL_IF channel_face>
+            <div class="postavatar"><img src="images/avatars/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt=""></div>
+        <TMPL_ELSE>
+            <div class="postavatar"><img src="images/avatars/nobody.png" alt=""/></div>
+        </TMPL_IF>
+        <div class="postdetails">
+            <TMPL_IF title><a href="<TMPL_VAR link ESCAPE="HTML">" target="_blank"><TMPL_VAR title></a><br /></TMPL_IF>
+            by: <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" target="_new"><TMPL_VAR channel_name></a>            
+        </div>
+        <TMPL_VAR content>
+    </div>
+</TMPL_IF>
+</TMPL_LOOP>
+
+</div>
+
+    <div class="sidebar">
+        <b>Ο πλανήτης αποτελεί ένα τόπο συνάντησης των μελών της ελληνικής κοινότητας ελ/λακ.</b><br /><br />
+	
+	Για να προσθέσεις το blog σου ή για να κάνεις κάποια αλλαγή στο ήδη υπάρχον απλώς χρησιμοποιήσε τη <a href="/contact.html">σχετική φόρμα</a>. Η διαχείριση του πλανήτη γίνεται δημόσια μέσα από μια <a href="http://librelist.com/browser/planet/" target="_blank">λίστα ταχυδρομείου</a>. Αν θες να συμμετάσχεις απλώς στείλε ένα κενό mail στη διεύθυνση:<br /><img src="images/list.png" alt="" /><br /><br />
+
+        Ο πλανήτης χρησιμοποιεί το ελεύθερο λογισμικό <a href="http://intertwingly.net/code/venus/" target="_blank">venus</a>. Για να δεις τις τροποποιήσεις στον κώδικα που έχουν γίνει μπορείς να επισκεφτείς το <a href="https://github.com/greek-libre-planet/greek-libre-planet" target="_blank">σχετικό repository</a>, όπου μπορείς να ανοίξεις κάποιο issue με σχόλια και παρατηρήσεις.<br /><br />
+        
+        <a href="atom.xml" title="Suscribe to Atom feed"><img src="images/rss.png" alt="Atom Feed"/></a><br /><br /><br />
+        
+        <span class="sources">Πηγές:</span><br /><br />
+        <TMPL_LOOP Channels>
+            <a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="images/feed-icon-10x10.png" alt="(feed)"></a> <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a><br />
+        </TMPL_LOOP>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footerdiv">Τα άρθρα του πλανήτη συλλέγονται αυτόματα χωρίς ανθρώπινη παρέμβαση, αποτελούν πνευματική ιδιοκτησία των συγγραφέων τους και αντικατοπτρίζουν τις απόψεις τους.</div>
+</div>
+
+<div id="back-top">
+    <a href="#top">⇧</a>
+</div>
+
+
+</body>
+</html>

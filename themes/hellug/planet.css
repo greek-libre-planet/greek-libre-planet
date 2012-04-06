@@ -1,0 +1,284 @@
+body {
+    font-family:'Ubuntu', 'Droid Sans', 'dejavu sans';
+    margin: 0px;
+    background-color:#eee;
+    font-size:14px;
+}
+
+a {
+    color:#0090B7;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover {
+    color:#000;
+    text-decoration:underline;
+}
+
+.header {
+    float:left;
+    color:#0090B7;
+    font-size:2em;
+    font-weight:bold;
+    margin:40px;
+    margin-bottom:0px;
+    text-shadow: 0.07em 0.07em 0.05em #33493c;
+}
+
+.container {
+    clear:both;
+    width:960px;
+    margin-left:40px;
+    float:left;
+}
+
+.postcontainer {
+    clear:both;
+    width:700px;
+    float:left;
+}
+
+.postdate {
+    clear:both;
+    float:left;
+    margin-top:30px;
+	background: #0090B7;
+    border-top: #33493c 5px solid;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 3px #292929;  
+    -moz-box-shadow: 1px 1px 3px #292929;  
+    box-shadow: 1px 1px 3px #292929;
+    color:white;
+    padding: .3em .4em .3em .4em;
+}
+
+.post {
+    clear:left;
+    float:left;
+    width:700px;
+    border-top: #33493c 5px solid; padding-bottom: 20px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 3px #292929;  
+    -moz-box-shadow: 1px 1px 3px #292929;  
+    box-shadow: 1px 1px 3px #292929;
+    padding:10px;
+    padding-top:0px;
+    margin-top:60px;
+}
+
+.sidebar {
+    float:right;
+    width:220px;
+    margin-top:120px;
+    text-align:left;
+    font-size:0.9em;
+}
+
+.postavatar {
+    position:relative;
+    left:-45px;
+    top:-45px;
+    width:auto;
+    display:inline-block;
+}
+
+.postdetails {
+    padding:20px;
+    float:right;
+    font-weight:bold;
+    text-align:right;
+    font-size:1.1em;
+    width:500px;
+}
+
+.sources {
+    color:#000;
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+.footer {
+    clear:both;
+    padding:10px;
+    width:700px;
+    margin-left:30px;
+    margin-bottom:20px;
+    padding-top:40px;
+    font-size:0.8em;
+}
+
+.footerdiv {
+    padding-top:10px;
+    border-top:1px dotted grey;
+}
+
+
+img {
+    border:none;
+}
+
+img a {
+    border:none;
+}
+
+
+.post img {
+    max-width:600px;
+    /*float:left;*/
+    padding-bottom:10px;
+    padding-right:10px;
+}
+
+.bigimg {
+    float:none;
+}
+
+pre, code {
+    background-color: #eee;
+    font: 0.9em 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+    overflow: auto;
+    max-width: 700px;
+    border:1px dotted grey;
+}
+
+#back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+#back-top a {
+    width: 58px;
+    height: 58px;
+    display: block;
+    text-align: center;
+    vertical-align:middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ddd;
+    background-color:#999;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    font-size:3.8em;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#back-top a:hover {
+    background-color: #000;
+}
+
+.contactlinks {
+    padding:20px;
+}
+
+.contactform {
+    clear:left;
+    float:left;
+    width:770px;
+    border-top: #33493c 5px solid; padding-bottom: 20px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 3px #292929;  
+    -moz-box-shadow: 1px 1px 3px #292929;  
+    box-shadow: 1px 1px 3px #292929;
+    padding:10px;
+    padding-top:0px;
+}
+
+.return {
+    clear:both;
+    padding-left:40px;
+}
+
+.guideline {
+    clear:both;
+    padding-left:40px;
+    width:560px;
+}
+
+
+form#addblog {
+    background-color:#eee;
+    /*
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    */
+    padding: 10px;
+    width: 450px;
+}
+
+form#addblog ol li {
+    background-color: none;
+    line-height: 30px;
+    list-style: none;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+}
+
+form#addblog ol ol li {
+    background: none;
+    border: none;
+    float: left;
+}
+
+form#addblog label {
+    float: left;
+    font-size: 13px;
+    width: 310px;
+}
+
+form#addblog fieldset fieldset label {
+    background:none no-repeat left 50%;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+    width: auto;
+}
+
+form#addblog fieldset fieldset label:hover {
+    cursor: pointer;
+}
+
+form#addblog input,
+form#addblog textarea { 
+    background: #ffffff;
+    border: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-style:italic;
+    outline: none;
+    padding: 5px;
+    width: 240px;
+    font-size:13px;
+}
+
+
+form#addblog input:not([type=submit]):focus,
+form#addblog textarea:focus {
+    background: #ccc;
+}
+
+form#addblog button {
+    background: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #000;
+    display: block;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: 7px 15px;
+    text-shadow: 0 1px 1px #000000;
+}
+
+form#addblog button:hover {
+    background: #fff;
+    cursor: pointer;
+}

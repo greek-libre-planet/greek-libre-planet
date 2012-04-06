@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<title><TMPL_VAR name>: Επικοινωνία</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" href="favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="planet.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=greek,latin' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+<div class="header">
+    <TMPL_VAR name>
+</div>
+<div class="return">
+    <a href="/" style="font-size:1em;">&lt;&lt; επιστροφή</a><br />
+</div>
+
+<div class="guideline">
+<b>Οδηγίες</b><br />
+<u>Feed</u><br />
+Αν το blog σου έχει περιεχόμενο αποκλειστικά σε σχέση με Ελεύθερο Λογισμικό, τότε συμπλήρωσε το γενικό feed του blog σου. Διαφορετικά μπορείς να δημιουργήσεις μια κατηγορία ή tag (πχ. planet) και να συμπληρώσεις το σχετικό feed.<br /><br />
+
+<u>Hackergotchi</u><br />
+Το Hackergotchi είναι ουσιαστικά το avatar κάθε blogger και εμφανίζετε σε κάθε post. Πρέπει να είναι μόνο το κεφάλι (ή κάποιο λογότυπο αν πρόκειται για blog κοινότητας) περίπου μεγέθους 100x100, διάφανου background και ίσως με μια ελαφρά σκιά. Δες τα <a href="/images/avatars/">υπόλοιπα hackergotchis</a>. Αν δεν είσαι εξοικειωμένος με κάποιο πρόγραμμα επεξεργασίας εικόνων, βάλε μια απλή φωτογραφία (σε καλή ανάλυση) και συμπλήρωσε στα σχόλια πως θες να τη φτιάξουμε εμείς!<br />
+</div>
+
+<div class="container">
+
+<div class="contactlinks">
+    ⇒ <a href="" id="addform">Προσθήκη νέου blog</a><br /><br />
+
+    ⇒ <a href="" id="editform">Αλλαγή σε υπάρχον blog</a>
+</div>
+
+<div id="addformbox" style="display:none;" class="contactform">
+    <iframe src="/addblog.php" width="560" height="820" frameborder="0" marginheight="0" marginwidth="0" overflow="none">Loading...</iframe>
+</div>
+
+<div id="editformbox" style="display:none;" class="contactform">
+    <iframe src="/editblog.php" width="560" height="820" frameborder="0" marginheight="0" marginwidth="0" overflow="none">Loading...</iframe>
+</div>
+
+<div style="clear:both">&nbsp;</div>
+</div>
+
+</body>
+</html>
