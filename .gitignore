@@ -2,8 +2,7 @@
 cache
 *.pluginc
 *.pyc
-libre/config_*
 *addblog.php
 *editblog.php
 *recaptchalib.php
-
+data
