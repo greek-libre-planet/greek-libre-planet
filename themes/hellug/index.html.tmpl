@@ -38,7 +38,7 @@
         </TMPL_IF>
         <div class="postdetails">
             <TMPL_IF title><a href="<TMPL_VAR link ESCAPE="HTML">" target="_blank"><TMPL_VAR title></a><br /></TMPL_IF>
-            by: <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" target="_new"><TMPL_VAR channel_name></a>            
+            by: <a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">" target="_new"><TMPL_VAR channel_name></a>
         </div>
         <TMPL_VAR content>
     </div>
@@ -48,14 +48,16 @@
 </div>
 
     <div class="sidebar">
-        <b>Ο πλανήτης αποτελεί ένα τόπο συνάντησης των μελών της ελληνικής κοινότητας ελ/λακ.</b><br /><br />
-	
-	Για να προσθέσεις το blog σου ή για να κάνεις κάποια αλλαγή στο ήδη υπάρχον απλώς χρησιμοποιήσε τη <a href="/contact.html">σχετική φόρμα</a>. Η διαχείριση του πλανήτη γίνεται δημόσια μέσα από μια <a href="http://librelist.com/browser/planet/" target="_blank">λίστα ταχυδρομείου</a>. Αν θες να συμμετάσχεις απλώς στείλε ένα κενό mail στη διεύθυνση:<br /><img src="images/list.png" alt="" /><br /><br />
+        <b>Ο πλανήτης αποτελεί ένα τόπο συνάντησης των μελών της ελληνικής κοινότητας ΕΛ/ΛΑΚ.</b><br /><br />
 
-        Ο πλανήτης χρησιμοποιεί το ελεύθερο λογισμικό <a href="http://intertwingly.net/code/venus/" target="_blank">venus</a>. Για να δεις τις τροποποιήσεις στον κώδικα που έχουν γίνει μπορείς να επισκεφτείς το <a href="https://github.com/greek-libre-planet/greek-libre-planet" target="_blank">σχετικό repository</a>, όπου μπορείς να ανοίξεις κάποιο issue με σχόλια και παρατηρήσεις.<br /><br />
-        
+        Για να προσθέσεις το blog σου ή να ζητήσεις κάποια αλλαγή στο ήδη υπάρχον, πήγαινε στη <a href="/contact.html">σχετική σελίδα</a>.<br /><br />
+
+        Η διαχείριση του πλανήτη γίνεται δημόσια μέσα από το <a href="https://github.com/greek-libre-planet/greek-libre-planet" target="_blank">σχετικό repository</a>, όπου μπορείς να ανοίξεις κάποιο issue με σχόλια και παρατηρήσεις<br /><br />
+
+        Ο πλανήτης βασίζεται στο ελεύθερο λογισμικό <a href="http://intertwingly.net/code/venus/" target="_blank">venus</a><br /><br />
+
         <a href="atom.xml" title="Suscribe to Atom feed"><img src="images/rss.png" alt="Atom Feed"/></a><br /><br /><br />
-        
+
         <span class="sources">Πηγές:</span><br /><br />
         <TMPL_LOOP Channels>
             <a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="images/feed-icon-10x10.png" alt="(feed)"></a> <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a><br />

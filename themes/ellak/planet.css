@@ -43,12 +43,12 @@ a:hover {
     clear:both;
     float:left;
     margin-top:30px;
-	background: #0090B7;
+    background: #0090B7;
     border-top: #33493c 5px solid;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    -webkit-box-shadow: 1px 1px 3px #292929;  
-    -moz-box-shadow: 1px 1px 3px #292929;  
+    -webkit-box-shadow: 1px 1px 3px #292929;
+    -moz-box-shadow: 1px 1px 3px #292929;
     box-shadow: 1px 1px 3px #292929;
     color:white;
     padding: .3em .4em .3em .4em;
@@ -61,8 +61,8 @@ a:hover {
     border-top: #33493c 5px solid; padding-bottom: 20px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    -webkit-box-shadow: 1px 1px 3px #292929;  
-    -moz-box-shadow: 1px 1px 3px #292929;  
+    -webkit-box-shadow: 1px 1px 3px #292929;
+    -moz-box-shadow: 1px 1px 3px #292929;
     box-shadow: 1px 1px 3px #292929;
     padding:10px;
     padding-top:0px;
@@ -184,16 +184,17 @@ pre, code {
     border-top: #33493c 5px solid; padding-bottom: 20px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    -webkit-box-shadow: 1px 1px 3px #292929;  
-    -moz-box-shadow: 1px 1px 3px #292929;  
+    -webkit-box-shadow: 1px 1px 3px #292929;
+    -moz-box-shadow: 1px 1px 3px #292929;
     box-shadow: 1px 1px 3px #292929;
     padding:10px;
     padding-top:0px;
 }
 
 .return {
-    clear:both;
-    padding-left:40px;
+    clear: both;
+    padding: 10px;
+    padding-left: 40px;
 }
 
 .guideline {
@@ -246,7 +247,7 @@ form#addblog fieldset fieldset label:hover {
 }
 
 form#addblog input,
-form#addblog textarea { 
+form#addblog textarea {
     background: #ffffff;
     border: none;
     -moz-border-radius: 3px;
